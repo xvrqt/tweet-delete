@@ -139,10 +139,8 @@
                 break;
         }
 
-        // Provide an update, scroll the window to load more tweets
-        if((num_rt_undone + num_deleted) % 10 == 0) {
-            updateUser();
-        }
+        // Post an update to the console
+        if((num_rt_undone + num_deleted) % 10 == 0) { updateUser(); }
 
         // Load more posts
         thereAndBackAgain(); 
@@ -151,8 +149,8 @@
         // Get the next tweet
         let tweet = document.querySelectorAll(tweet_selector)[0];
 
-        // Undo retweets if(undo_rts && tweet.querySelectorAll(rt_seletector.length) {
-        if(tweet.querySelectorAll(rt_seletector).length) {
+        // Undo retweets 
+        if(undo_rts && tweet.querySelectorAll(rt_seletector).length) {
             tweet.querySelectorAll(rt_seletector)[0].click();
             await sleep()
             document.querySelectorAll(rt_confirm_selector)[0].click();
