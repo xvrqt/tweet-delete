@@ -123,7 +123,7 @@
 
     await document.load
     cleanUpHeader();
-    //cleanUpTrending();
+    cleanUpTrending();
     cleanUpWTF();
     thereAndBackAgain();
     while(document.querySelectorAll(tweet_menu_selector).length) {try {
