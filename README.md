@@ -1,3 +1,6 @@
+# DEPRECATED
+Doesn't work with the new X frontend and I just straight up deleted my entire Twitter instead so I'm not going to keep working on this.
+
 # Tweet Delete
 Use this script to delete your tweets through Twitter's frontend; especially now that Elon wants $5k a month for API access this tool can provide a little relief.
 
